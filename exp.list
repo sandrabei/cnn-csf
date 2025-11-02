@@ -1,0 +1,9 @@
+v11
+v12_mse
+v13_mae
+v14_bce
+v15_focal
+v16_gce_sigma1
+v17_gce_sigma0.5
+v18_gce_q0.2
+v19_gce_q0.6
