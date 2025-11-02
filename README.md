@@ -1,4 +1,4 @@
-# 3D Medical Image Processing Tool
+# CNN U-Net for CSF
 
 A deep learning framework for 3D medical image processing and point detection using U-Net architecture.
 
