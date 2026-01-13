@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: cnn-csf
+Version: 0.1.0
+Summary: A library for 3D medical image point detection using U-Net
+Home-page: https://github.com/sandrabei/cnn-csf
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/sandrabei/cnn-csf
+Project-URL: Repository, https://github.com/sandrabei/cnn-csf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Medical Image Processing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: torch>=1.9.0
+Requires-Dist: torchvision>=0.10.0
+Requires-Dist: pandas>=1.2.0
+Requires-Dist: tqdm>=4.60.0
+Requires-Dist: scikit-learn>=0.24.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: flake8>=3.9; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# 3D Medical Image Processing Tool
+
+A deep learning framework for 3D medical image processing and point detection using U-Net architecture.
+
+## Data Preprocessing
+
+Use `preprocess_data.py` to process raw 3D medical image data:
+
+```bash
+python3 preprocess_data.py raw_data data
+```
+
+- `raw_data/`: Directory containing raw 3D medical image datasets
+- `data/`: Directory containing processed data
+
+## Training and Evaluation
+
+See the following shell scripts for detailed usage:
+
+- `train.sh`: Model training
+- `eval.sh`: Model evaluation
+- `train_finetune.sh`: Fine-tuning experiments
+- `eval_finetune.sh`: Fine-tuning evaluation
+
+## Requirements
+
+```bash
+pip install numpy matplotlib Pillow scipy torch torchvision scikit-learn tqdm
+```
